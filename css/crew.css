@@ -456,3 +456,167 @@ footer {
     height: 300px;
     background-color: black;
 }
+/*MOLDES*/
+.contenedor {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+}
+h1{
+    text-align: center;
+}
+.molde{
+    width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+    padding: 20px;
+    border-radius: 5px;
+  background: linear-gradient(to left,rgba(255,255,255,0),rgb(7, 6, 6));
+
+}
+
+img{
+    text-align: center;
+    align-items: center;
+    transition: 300ms;
+    object-fit: cover;
+  border-radius: 5%; 
+
+}
+img:hover{
+    transform: scale(1.10);
+}
+body {
+	background: #1D202B;
+	color: #fff;
+    font-family: 'Bebas Neue', cursive;
+/* 	font-family: 'Roboto', sans-serif; */
+	min-height: 100vh;
+}
+.descripcion2{
+    height: 100%;
+    display: flex;/*se queda uno al lado del otro*/
+	flex-direction: column;
+	justify-content: space-evenly;
+    color: black;
+    text-align: center;
+
+}
+.descripcion1{
+
+    background-color: rgba(255, 255, 0, 0.726);
+/*     border: #ce8e52 5px solid; */
+    border-radius: 15px;
+}
+
+
+/*producto*/
+.contenedor2 {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+
+	/* Flexbox */
+	/* display: flex;
+	gap: 20px; */
+
+	/* Grid */
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	gap: 20px;
+}
+.contenedor2 .footer {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	/*padding: 40px 0;*/
+
+	/* Flexbox */
+	/* display: flex;
+	gap: 20px; */
+
+	/* Grid */
+	display: grid;
+	grid-template-columns: none;
+    grid-column: 1 / 4;
+/*     grid-area: footer;
+    grid-row-start: footer;
+    grid-column-start: footer;
+    grid-row-end: footer;
+    grid-column-end: footer; */
+	/*gap: 20px;*/
+}
+
+/* .titulo {
+	font-size: 24px;
+	padding: 20px 0;
+} */
+
+.cont-fotos {
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.card {
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+    cursor: pointer;
+}
+
+.card .textos {
+	height: 100%;
+	display: flex;/*se queda uno al lado del otro*/
+	flex-direction: column;
+	justify-content: space-between;
+}
+.textos:hover{
+
+    display:none;
+}
+.banner {
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px;
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+.banner ul {
+	list-style: none;
+}
+
+.banner ul li {
+	margin: 15px;
+	font-weight: bold;
+}
+
+.banner .boton {
+	background: #FFD600;
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px;
+	border: none;
+	border-radius: 100px;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+}
