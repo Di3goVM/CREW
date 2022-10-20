@@ -476,7 +476,59 @@ header .titulo {
 footer {
     width: 100%;
     height: 300px;
-    background-color: black;
+    background-color: rgba(34, 34, 39,0.9);
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-footer{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-footer,.footer-redes {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-footer path {
+    fill: whitesmoke;   
+
+}
+
+.imagen-footer svg {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-footer ul li {
+   margin-top: 1.5em;
+   margin-bottom: 1.5em;
+   list-style: none;
+}
+
+.footer-redes ul li {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    list-style: none;
+}
+
+.menu-footer a {
+    color: whitesmoke;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.footer-redes a {
+    color: whitesmoke;
+    font-size: 18px;
+    text-decoration: none;
 }
 
 
