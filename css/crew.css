@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+body {
+    box-sizing: border-box;
+    max-width: 100% !important;
+    overflow-x: hidden;
+}
+
 /*nav*/
 nav {
     width: 100%;
@@ -34,7 +40,7 @@ nav div a {
 nav li a {
     color: whitesmoke;
     font-family: 'Bebas Neue', cursive;
-    font-size: 22px;
+    font-size: 21px;
     text-decoration: none;
 }
 
@@ -59,7 +65,7 @@ nav li a:hover {
 
 header {
     width: 100%;
-    height: 950px;
+    height: 100vh;
     background: url(../img/portada3.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -69,29 +75,29 @@ header {
 }
 
 header .titulo {
-    width: 300px;
-    height: 800px;
+    width: 50%;
+    height: 20%;
     position: absolute;
     background-color: transparent;
     background-size: cover;
     background-position: center;
-    top: 8%;
-    left: 10%;
+    bottom: 25%;
+    left: 25%;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     
 }
 
 .titulo .letra {
-    height: 24%;
-    width: 90%;
+    height: 90%;
+    width: 20%;
+    min-width: 180px;
     text-align: center;
 }
 
 .titulo .letra h2 {
     margin: 0;
-    font-size: 11em;
+    font-size: 11rem;
     font-weight: bold;
     color: transparent;
     font-family: 'Anton',cursive;
@@ -100,6 +106,17 @@ header .titulo {
     background-position: center;
     background-clip: text;
     -webkit-background-clip: text;
+}
+
+.imagen-logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.imagen-logo path{
+
+	fill: rgb(211, 207, 199);
 }
 
 /*sobre mi*/
@@ -151,7 +168,7 @@ header .titulo {
 /*barra*/
 
 .barra {
-    width: 700px;
+    width: 40%;
     height: 200px;
     background-color: transparent;
     position: absolute;
@@ -295,6 +312,10 @@ header .titulo {
     font-family: 'bebas neue',cursive;
 }
 
+.texto p {
+    font-size: 20px;
+}
+
 .seccion_boton {
     width: 100%;
     height: 30%;
@@ -366,7 +387,7 @@ header .titulo {
 }
 
 .mapa {
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0);
     width: 600px;
     height: 600px;
 }
