@@ -344,16 +344,66 @@ header .titulo {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
+
+
 .caja_texto {
-    position: absolute;
+    position: relative;
     width: 50%;
     height: 80%;
     background-color: rgba(44, 41, 41, 0.664);
-    top: 10%;
-    right: 10%;
+    right: 10%; 
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
 }
+
+.sobre_mi_foto {
+    width: 400px;
+    height: 400px;
+    background-color: #ff0844;
+    position: absolute;
+    top: -30px;
+    border-radius: 50%;
+    background-image: url(../img/sobreMi.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid rgb(41, 41, 82);
+}
+
+.yo {
+    position: absolute;
+    bottom: 0px;
+    height: 50%;
+}
+.yo div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: whitesmoke;
+
+}
+
+.yo div i {
+    margin-top: 23px;
+}
+
+.yo div h2,i {
+    font-size: 30px;
+    font-family: 'bebas neue';
+    margin-left: 10px;
+}
+
+.yo div p {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+}
+
 
 
 /*mapa y formulario*/
@@ -690,7 +740,9 @@ footer {
     .caja_texto {
 
         width: 80%;
-        height: 80%;
+        height: 90%;
+        top: 0;
+        left: 0;
     }
 
     /*mapa y formulario*/
@@ -749,6 +801,8 @@ footer {
     justify-content: center;
     align-items: center;
     }
+
+
 
 
 }
