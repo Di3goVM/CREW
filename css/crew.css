@@ -1,16 +1,8 @@
-*{
-    box-sizing: border-box;
-}
-
-body {
-    box-sizing: border-box;
-    max-width: 100% !important;
-    overflow-x: hidden;
-}
 
 /*nav*/
 nav {
     width: 100%;
+    max-width: 100%;
     height: 70px;
     background-color: grey;
     position: fixed;
@@ -44,8 +36,9 @@ nav li a {
     text-decoration: none;
 }
 
-nav li a:hover {
-    text-decoration: underline;
+nav li a:hover {    
+    font-size: 25px;
+    transition: all 0.2s;
 }
 
 .logotipo {
@@ -61,6 +54,7 @@ nav li a:hover {
     
 }
 
+
 /*header*/
 
 header {
@@ -71,6 +65,8 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -112,6 +108,15 @@ header .titulo {
     display: flex;
     justify-content: center;
     padding-top: 30px;
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    
+}
+
+.imagen-logo svg{
+    width: 100%;
+    height: 100%;
 }
 
 .imagen-logo path{
@@ -119,61 +124,15 @@ header .titulo {
 	fill: rgb(211, 207, 199);
 }
 
-/*sobre mi*/
-
-.sobre_mi {
-    width: 100%;
-    height: 950px;
-    background-image: url(../img/portada2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.caja_texto {
-    position: absolute;
-    width: 800px;
-    height: 800px;
-    background-color: rgba(44, 41, 41, 0.664);
-    top: 10%;
-    right: 10%;
-}
-
-.titulo_sobreMi {
-    width: 700px;
-    height: 200px;
-    background-color: rgba(44, 41, 41, 0.664);
-    position: absolute;
-    top: 5%;
-    right: 10%;
-    text-align: center;
-}
-
-.titulo_sobreMi h2{
-    margin: 0;
-    font-size: 10em;
-    font-weight: bold;
-    color: transparent;
-    font-family: 'Anton',cursive;
-    background-color: #141414;
-    background-size: cover;
-    background-position: center;
-    background-clip: text;
-    -webkit-text-stroke: #141414 10px solid;
-
-    -webkit-background-clip: text;
-}
-
 /*barra*/
 
 .barra {
-    width: 40%;
+    width: 550px;
     height: 200px;
     background-color: transparent;
     position: absolute;
     bottom: 5%;
-    left: 30%;
+    
 }
 
 .barra ul {
@@ -183,6 +142,7 @@ header .titulo {
     justify-content: space-around;
     align-items: center;
     list-style: none;
+    padding: 0;
 }
 
 .barra ul a {
@@ -191,6 +151,7 @@ header .titulo {
     font-size: 25px;
     color: whitesmoke;
 }
+
 
 
 /*titulo-mis trabajos*/
@@ -222,12 +183,11 @@ header .titulo {
     color: whitesmoke;
 }
 
-
 /*secciones*/
 
 .secciones {
     width: 100%;
-    height: 950px;
+    height: 100vh;
     background-color: rgb(33, 30, 36);
     display: flex;
     justify-content: space-around;
@@ -236,7 +196,7 @@ header .titulo {
 
 .productos {
     width: 500px;
-    height: 750px;
+    height: 77%;
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -247,7 +207,7 @@ header .titulo {
 
 .moldes {
     width: 500px;
-    height: 750px;
+    height: 77%;
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -314,6 +274,7 @@ header .titulo {
 
 .texto p {
     font-size: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
 .seccion_boton {
@@ -372,11 +333,34 @@ header .titulo {
     top: 0;
 }
 
+
+/*sobre mi*/
+
+.sobre_mi {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/portada2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.caja_texto {
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    background-color: rgba(44, 41, 41, 0.664);
+    top: 10%;
+    right: 10%;
+}
+
+
 /*mapa y formulario*/
 
 .mapa_formulario {
     width: 100%;
-    height: 950px;
+    height: 100vh;
     background-image: url(../img/portada4.jpeg);
     background-position: center;
     background-repeat: no-repeat;
@@ -390,6 +374,11 @@ header .titulo {
     background-color: rgba(255, 0, 0, 0);
     width: 600px;
     height: 600px;
+}
+
+.mapa iframe{
+    width: 100%;
+    height: 100%;
 }
 
 .caja_formulario {
@@ -409,14 +398,13 @@ header .titulo {
 .formulario {
     width: 100%;
     height: 100%;
-    max-width: 100%;
     padding: 20px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
     background-color: rgba(0, 0, 0, 0.3);
-    top: 30px;
-    right: 50px;
     z-index: 5;
+    position: relative;
 }
+
 
 .formulario__titulo {
     text-align: center;
@@ -454,7 +442,7 @@ header .titulo {
     margin-top: -80px;
     z-index: -20;
     transition: all 0.2s;
-
+    
 }
 
 .formulario__submit {
@@ -470,6 +458,12 @@ header .titulo {
     margin-top: -125px;
 }
 
+
+
+.formulario__input::placeholder {
+    color: transparent;
+
+}
 
 /*footer*/
 
@@ -523,23 +517,275 @@ footer {
     color: whitesmoke;
     font-size: 18px;
     text-decoration: none;
+    font-family: 'Barlow Condensed';
 }
 
 .footer-redes a {
     color: whitesmoke;
     font-size: 18px;
     text-decoration: none;
+    font-family: 'Barlow Condensed';
 }
 
+
+
+/*diseño responsivo*/
+
+
+@media all and (min-width: 800px){
+    .barra-responsive{
+        display: none;
+    }
+
+    .menu-responsive{
+        display: none;
+        
+    }
+    .menu-responsive a i{
+        display: none;
+    }
+
+    .menu-responsive a {
+        display: none;
+    }
+
+    
+}
+
+/*notebook*/
+
+@media (max-width: 1400px) or (max-height: 850px){
+
+    .imagen-logo{
+        width: 50%;
+        height: 80%;
+    }
+
+	.imagen-logo svg {
+		width: 100%;
+		height: 100%;
+	}
+
+    /*secciones*/
+
+    .boton.tres {
+        margin-bottom: 1px;
+        height: 90%;
+    }
+
+    .mapa,.caja_formulario {
+        width: 40%;
+        height: 80%;
+    }
+
+
+}
+
+
+
+/*movil*/
+
+@media all and (max-width: 800px){
+
+    /*nav*/
+
+    .menu {
+        display: none;
+    }
+
+    /*header*/
+
+	.imagen-logo {
+		height: 90%;
+		width: 100%;
+	}
+
+	.imagen-logo svg {
+		width: 100%;
+		height: 100%;
+	}
+
+    header .titulo {
+        display: none;
+    }
+
+    /*barra*/
+
+    .barra {
+        display: none;
+    }
+
+    .barra-responsive {
+    width: 80%;
+    height: 100px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 5%;
+    
+    }
+
+    .barra-responsive ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    }
+
+    .barra-responsive ul a {
+    font-family: 'pirata one',cursive;
+    text-decoration: none;
+    font-size: 35px;
+    color: whitesmoke;
+    }
+
+    /*titulo*/
+
+    .titulo-trabajos div h2 {
+    font-family: 'Pirata One', cursive;
+    font-size: 30px;
+    box-sizing: border-box;
+    margin: 0;
+    color: whitesmoke;
+    }
+
+    /*secciones*/
+
+    .secciones {
+        height: 150vh;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .productos,.moldes {
+        width: 80%;
+        height: 45%;
+    }
+
+    .padre {
+        width: 90%;
+        height: 90%;
+    }
+
+    .texto p {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: .9125rem;
+    }
+
+    .boton.tres {
+        margin-bottom: 2%;
+        height: 90%;
+    }
+
+    /*sobre mi*/
+
+    .sobre_mi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .caja_texto {
+
+        width: 80%;
+        height: 80%;
+    }
+
+    /*mapa y formulario*/
+
+    .mapa_formulario {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 150vh;
+    }
+
+    .mapa {
+        height: 45%;
+        width: 90%;
+
+    }
+
+    .formulario {
+        position: relative;
+    }
+
+    .caja_formulario{
+        height: 50%;
+        width: 90%;
+        position: relative;
+    }
+
+    .formulario__label {
+        display: none;
+        
+    }
+
+    .formulario__input,.formulario__submit {
+    display: block;
+    width: 100%;
+    height: 10%;
+    }
+
+    .formulario__input::placeholder {
+        color: black;
+    }
+
+    /*footer*/
+
+    .imagen-footer{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .menu-footer,.footer-redes {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+}
+
+@media all and (max-width: 400px){
+
+    /*footer*/
+
+    .imagen-footer{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .menu-footer,.footer-redes {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+}
+
+
+/*productos y moldes*/
 
 /*MOLDES*/
 
 
 .contenedor {
-	width: 90%;
-	max-width: 1200px;
-	margin: auto;
-	padding: 40px 0;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
 }
 
 h1{
@@ -548,11 +794,11 @@ h1{
 
 .molde{
     width: 90%;
-	max-width: 1200px;
-	margin: auto;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
     padding: 20px;
     border-radius: 5px;
   background: linear-gradient(to left,rgba(255,255,255,0),rgb(7, 6, 6));
@@ -572,19 +818,13 @@ img:hover{
     transform: scale(1.10);
 }
 
-body {
-	background: #1D202B;
-	color: #fff;
-    font-family: 'Bebas Neue', cursive;
-/* 	font-family: 'Roboto', sans-serif; */
-	min-height: 100vh;
-}
+
 
 .descripcion2{
     height: 100%;
     display: flex;/*se queda uno al lado del otro*/
-	flex-direction: column;
-	justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-evenly;
     color: black;
     text-align: center;
 
@@ -634,20 +874,20 @@ body {
 }
 
 .contenedor2 {
-	width: 90%;
-	max-width: 1200px;
-	margin: 0;
-	padding: 40px 0;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0;
+    padding: 40px 0;
     min-height: 650px;
 
-	/* Flexbox */
-	/* display: flex;
-	gap: 20px; */
+    /* Flexbox */
+    /* display: flex;
+    gap: 20px; */
 
-	/* Grid */
-	display: grid;
-	grid-template-columns: 3fr 1fr;
-	gap: 20px;
+    /* Grid */
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
 }
 
 .mascaras h1{
@@ -667,56 +907,56 @@ body {
 }
 
 .contenedor2 .footer {
-	width: 90%;
-	max-width: 1200px;
-	margin: auto;
-	/*padding: 40px 0;*/
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    /*padding: 40px 0;*/
 
-	/* Flexbox */
-	/* display: flex;
-	gap: 20px; */
+    /* Flexbox */
+    /* display: flex;
+    gap: 20px; */
 
-	/* Grid */
-	display: grid;
-	grid-template-columns: none;
+    /* Grid */
+    display: grid;
+    grid-template-columns: none;
     grid-column: 1 / 4;
 /*     grid-area: footer;
     grid-row-start: footer;
     grid-column-start: footer;
     grid-row-end: footer;
     grid-column-end: footer; */
-	/*gap: 20px;*/
+    /*gap: 20px;*/
 }
 
 /* .titulo {
-	font-size: 24px;
-	padding: 20px 0;
+    font-size: 24px;
+    padding: 20px 0;
 } */
 
 .cont-fotos {
 
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .card {
-	border-radius: 10px;
-	min-height: 200px;
-	font-weight: bold;
-	padding: 20px;
-	position: relative;
-	overflow: hidden;
-	background-size: cover;
-	background-position: center center;
+    border-radius: 10px;
+    min-height: 200px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
     cursor: pointer;
 }
 
 .card .textos {
-	height: 100%;
-	display: flex;/*se queda uno al lado del otro*/
-	flex-direction: column;
-	justify-content: space-between;
+    height: 100%;
+    display: flex;/*se queda uno al lado del otro*/
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .textos:hover{
@@ -725,36 +965,36 @@ body {
 }
 
 .banner {
-	border-radius: 10px;
-	text-align: center;
-	padding: 20px;
-	background-size: cover;
-	background-position: center center;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 
 .banner ul {
-	list-style: none;
+    list-style: none;
 }
 
 .banner ul li {
-	margin: 15px;
-	font-weight: bold;
+    margin: 15px;
+    font-weight: bold;
 }
 
 .banner .boton {
-	background: #FFD600;
-	display: block;
-	width: 100%;
-	font-weight: bold;
-	font-size: 14px;
-	text-align: center;
-	padding: 10px;
-	border: none;
-	border-radius: 100px;
-	font-family: 'Roboto', sans-serif;
-	cursor: pointer;
+    background: #FFD600;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
 }
