@@ -811,6 +811,10 @@ footer {
     align-items: center;
     }
 
+    .footer-redes ul li {
+        margin: 0;
+    }
+
 
 
 
