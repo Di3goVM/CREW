@@ -745,6 +745,15 @@ footer {
         left: 0;
     }
 
+    .sobre_mi_foto {
+        height: 50%;
+        width: 110%;
+    }
+
+    .yo {
+        overflow: scroll;
+    }
+
     /*mapa y formulario*/
 
     .mapa_formulario {
