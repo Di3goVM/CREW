@@ -856,7 +856,14 @@ footer {
 }
 
 h1{
-    text-align: center;
+        text-align: center;
+        color: whitesmoke;
+        background: black;
+        border-radius: 10px;
+        font-family: 'pirata one',curisve;
+        font-size: 3em;
+        border-top: 2px solid sandybrown;
+        border-bottom: 2px solid sandybrown;
 }
 
 .molde{
@@ -868,7 +875,8 @@ h1{
     gap: 30px;
     padding: 20px;
     border-radius: 5px;
-  background: linear-gradient(to left,rgba(255,255,255,0),rgb(7, 6, 6));
+    background: linear-gradient(to left,rgba(255,255,255,0),rgb(7, 6, 6));
+    align-items: center;
 
 }
 
@@ -1064,4 +1072,13 @@ img:hover{
     border-radius: 100px;
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
+}
+@media (max-width:800px){
+    .contenedor2{
+        display: flex;
+        flex-direction: column;
+    }
+    .molde{
+        display: list-item;
+    }
 }
