@@ -523,7 +523,7 @@ header .titulo {
 footer {
     width: 100%;
     height: 300px;
-    background-color: rgba(34, 34, 39,0.9);
+    background-color: rgba(34, 34, 39);
     display: flex;
     justify-content: center;
 }
