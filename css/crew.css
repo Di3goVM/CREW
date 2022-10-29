@@ -202,6 +202,7 @@ header .titulo {
     justify-content: center;
     align-items: center;
     border: #ce8e52 5px solid;
+    border-radius: 5px;
 
 }
 
@@ -213,6 +214,7 @@ header .titulo {
     justify-content: center;
     align-items: center;
     border: #ce8e52 5px solid;
+    border-radius: 5px;
 }
 
 /*caja padre*/
@@ -220,8 +222,9 @@ header .titulo {
 .padre {
     width: 90%;
     height: 90%;
-    background-color: red;
     box-sizing: border-box;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .imagen1,.imagen2 {
@@ -684,11 +687,28 @@ footer {
     padding: 0;
     }
 
+    .barra-responsive ul li {
+        width: 17vw;
+        height: 9vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2e2929;
+        border-radius: 50%;
+        border: 0.3px solid black;
+        box-shadow: #111010 -5px 5px 10px;
+    }
+
     .barra-responsive ul a {
     font-family: 'pirata one',cursive;
     text-decoration: none;
-    font-size: 35px;
     color: whitesmoke;
+    }
+
+    .barra-responsive ul li a i {
+        margin-left: 0;
+        font-size: 6vw;
+
     }
 
     /*titulo*/
@@ -855,7 +875,7 @@ footer {
     padding: 40px 0;
 }
 
-h1{
+.mascaras h1{
         text-align: center;
         color: whitesmoke;
         background: black;
@@ -864,6 +884,17 @@ h1{
         font-size: 3em;
         border-top: 2px solid sandybrown;
         border-bottom: 2px solid sandybrown;
+}
+
+.masetas h1{
+    text-align: center;
+    color: whitesmoke;
+    background: black;
+    border-radius: 10px;
+    font-family: 'pirata one',curisve;
+    font-size: 3em;
+    border-top: 2px solid sandybrown;
+    border-bottom: 2px solid sandybrown;
 }
 
 .molde{
