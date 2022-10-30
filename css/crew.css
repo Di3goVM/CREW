@@ -953,16 +953,28 @@ img:hover{
     font-family: 'bebas neue',cursive;
 }
 .descripcion2 p {
-
     font-size: 1.25rem;
 }
-.descripcion1{
 
+.descripcion1{
     background-color: rgba(255, 255, 0, 0.726);
 /*     border: #ce8e52 5px solid; */
     border-radius: 15px;
 }
-
+.contenedor h1{
+    text-align: center;
+    margin: auto;
+    width: 300px;
+    color: whitesmoke;
+    background: black;
+    border-radius: 10px;
+    font-family: 'pirata one',curisve;
+    font-size: 3em;
+    border-top: 2px solid sandybrown;
+    border-bottom: 2px solid sandybrown;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
 
 /*producto*/
 
